@@ -95,6 +95,59 @@ header {
     padding-top: 13px;
 }
 
+/****** Info group ***********/
+.info-group {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    margin-bottom: 35px;
+}
+
+.headline {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.headline h1 {
+    font-size: 22px;
+}
+
+.search-bar {
+    display: flex;
+    gap: 0px;
+}
+
+.fa-border {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 15px 0 0 15px;
+    background: var(--main-bg-color);
+    color: black;
+    width: 50px;
+    height: 49px;
+}
+
+input[type="text"] {
+    width: 195px;
+    border: 1px solid var(--main-bg-color);
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 24px;
+}
+
+.submit {
+    border: 1px solid var(--main-color);
+    color: white;
+    background: var(--main-color);
+    border-radius: 0 15px 15px 0;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 16px;
+}
+
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
