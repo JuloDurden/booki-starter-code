@@ -348,6 +348,31 @@ header {
     padding: 20px 19px;
 }
 
+/****** Footer ***********/
+footer {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--main-bg-color);
+}
+
+.footer-section {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+}
+
+.footer-section li {
+    list-style: none;
+    margin-top: 15px;
+}
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
