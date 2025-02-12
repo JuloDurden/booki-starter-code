@@ -76,20 +76,19 @@ header {
 
 #navbar {
     display: flex;
+    flex-direction: row;
     align-items: start;
     gap: 68px;
-    list-style: none;
 }
 
-#navbar li {
+.navbar-link {
     display: flex;
     height: 35px;
-    padding-top : 15px;
+    padding-top: 15px;
     margin-top: 0;
-
 }
 
-#navbar li:hover {
+.navbar-link:hover {
     border-top: 2px solid var(--main-color);
     color: var(--main-color);
     padding-top: 13px;
@@ -116,23 +115,25 @@ header {
     /****** Searchbar ***********/
     .search-bar {
         display: flex;
+        height: 49px;
         gap: 0px;
     }
 
-    .fa-border {
+    .location-dot {
         display: flex;
         justify-content: center;
         align-items: center;
         border: 1px solid var(--main-bg-color);
         border-radius: 15px 0 0 15px;
         background: var(--main-bg-color);
-        color: black;
         width: 50px;
-        height: 49px;
+    }
+
+    .fa-location-dot {
+        color: black;
     }
 
     input[type="text"] {
-        width: 195px;
         border: 1px solid var(--main-bg-color);
         color: black;
         font-size: 18px;
@@ -150,6 +151,10 @@ header {
         padding: 15px 16px;
     }
 
+    .fa-magnifying-glass {
+        display: none;
+    }
+
     /****** Filterbar ***********/
     .filter-bar {
         display: flex;
@@ -165,6 +170,11 @@ header {
     .text {
         font-size: 17px;
         font-weight: 700;
+    }
+
+    .filter-buttons {
+        display: flex;
+        gap: 15px;
     }
 
     .button {
@@ -434,5 +444,93 @@ footer {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+    .main-container {
+        padding: 0;
+    }
+
+    header {
+        flex-direction: column; /* Affichage en colonnes */
+        width: 100%;
+        height: 115px; /* 79px en full-width */
+    }
+
+    #logo {
+        margin: auto; /* Pour le centrer dans sa zone */
+    }
+
+    #navbar {
+        width: 100%; /* Pour occuper toute la largeur */
+        gap: 0; /* Pour supprimer le gap du full-width */
+        height: 36px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar-link {
+        flex: 1; /* Divise en largeur égale chaque div */
+        justify-content: center;
+        width: 100%;
+        padding-top: 0;
+        border-bottom: 2px solid var(--main-bg-color);
+        text-align: center; /* Centre le texte horizontalement */
+    }
+
+    .navbar-link a {
+        display: block; /* Assurez-vous que le lien prend toute la largeur */
+        width: 100%;
+        height: 100%;
+    }
+
+    .navbar-link:hover a {
+        border-bottom: 2px solid var(--main-color);
+        color: var(--main-color);
+    }
+
+    .info-group {
+        padding: 0 20px;
+    }
+
+    .search-bar {
+        width: 100%;
+    }
+
+    .location-dot {
+        width: 50px;
+    }
+
+    input[type="text"] {
+        /* padding-left: -28px; */
+    }
+
+    .fa-magnifying-glass {
+        display: inline-flex;
+        color: white;
+        width: 17px;
+    }
+
+    .search-txt {
+        display: none;
+    }
+
+    .submit {
+        border-radius: 15px;
+        margin-left: -25px;
+        width: 50px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-buttons {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .button {
+        flex: 1;
+    }
+
 }

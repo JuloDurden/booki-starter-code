@@ -18,10 +18,10 @@
     <div class="main-container">
         <header>
             <img id="logo" src="./images/logo/Booki.png" alt="Booki">
-            <ul id="navbar">
-                <li><a href="#hebergements">Hébergements</a></li>
-                <li><a href="#activites">Activités</a></li>
-            </ul>
+            <div id="navbar">
+                <div class="navbar-link"><a href="#hebergements">Hébergements</a></div>
+                <div class="navbar-link"><a href="#activites">Activités</a></div>
+            </div>
         </header>
         <main>
             <div class="info-group">
@@ -30,27 +30,29 @@
                     <p>En plein centre-ville ou en pleine nature</p>
                 </div>
                 <form class="search-bar">
-                    <i class="fa-solid fa-location-dot fa-border"></i>
+                    <button class="location-dot"><i class="fa-solid fa-location-dot fa-lg fa-border"></i></button>
                     <input type="text" value="Marseille, France">
-                    <button class="submit" type="submit">Rechercher</button>
+                    <button class="submit" type="submit"><i class="fa-solid fa-magnifying-glass"></i><span class="search-txt">Rechercher</span></button>
                 </form>
                 <div class="filter-bar">
                     <p>Filtres</p>
-                    <div class="economic button">
-                        <i class="fa-solid fa-money-bill-wave"></i>
-                        <span class="filter text">Économique</span>
-                    </div>
-                    <div class="family button">
-                        <i class="fa-solid fa-person"></i>
-                        <span class="filter text">Familial</span>
-                    </div>
-                    <div class="romantic button">
-                        <i class="fa-solid fa-heart"></i>
-                        <span class="filter text">Romantique</span>
-                    </div>
-                    <div class="nugget button">
-                        <i class="fa-solid fa-fire"></i>
-                        <span class="filter text">Nos pépites</span>
+                    <div class="filter-buttons">
+                        <div class="economic button">
+                            <i class="fa-solid fa-money-bill-wave"></i>
+                            <span class="filter text">Économique</span>
+                        </div>
+                        <div class="family button">
+                            <i class="fa-solid fa-person"></i>
+                            <span class="filter text">Familial</span>
+                        </div>
+                        <div class="romantic button">
+                            <i class="fa-solid fa-heart"></i>
+                            <span class="filter text">Romantique</span>
+                        </div>
+                        <div class="nugget button">
+                            <i class="fa-solid fa-fire"></i>
+                            <span class="filter text">Nos pépites</span>
+                        </div>
                     </div>
                 </div>
                 <div class="info-bar">
