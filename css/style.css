@@ -356,7 +356,7 @@ input[type="text"] {
 .activites-cards .card {
     display: flex;
     flex-direction: column;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding: 0;
 }
 
@@ -392,7 +392,7 @@ footer {
     display: flex;
     flex-direction: column;
     width: 33%;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 .footer-section h3 {
@@ -426,10 +426,11 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 20px;
     }
 
     .populaires-cards a {
-        width: 30%;
+        width: 33%;
     }
 
     .populaires-cards .card-title {
