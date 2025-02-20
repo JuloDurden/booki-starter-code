@@ -180,6 +180,7 @@ input[type="text"] {
 .filter-buttons {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -188,7 +189,9 @@ input[type="text"] {
     flex-direction: row;
     align-items: center;
     gap: 10px;
-    height: 50px; 
+    height: 50px;
+    min-width: fit-content;
+    /* max-width: max-content; */
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     padding: 0 19px;
@@ -243,7 +246,7 @@ input[type="text"] {
 
 .hebergements-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     gap: 30px;
 }
@@ -529,15 +532,16 @@ footer {
     }
 
     .filter-buttons {
-        flex-wrap: wrap;
         row-gap: 10px;
         column-gap: 20px;
     }
 
     .button {
         box-sizing: border-box;
+        min-width: 155px;
+        width: calc(50% - 10px);
+        padding: 0 14px;
         font-size: 14px;
-        flex: 1;
     }
 
     .hebergements-and-populaires {
